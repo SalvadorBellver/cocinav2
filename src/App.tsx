@@ -4,7 +4,7 @@ import { WeeklyPlanner } from './components/WeeklyPlanner';
 import { ShoppingList } from './components/ShoppingList';
 import { Navigation } from './components/Navigation';
 import { LoginPage } from './components/LoginPage';
-import { UtensilsCrossed, CheckCircle2, LogOut } from 'lucide-react';
+import { ChefHat, CheckCircle2, LogOut } from 'lucide-react';
 import { useMenuStore } from './store/menuStore';
 import { useAuth } from './contexts/AuthContext';
 
@@ -37,7 +37,7 @@ function App() {
     if (isLoading) {
       return (
         <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="animate-pulse text-gray-500">Cargando...</div>
+          <div className="animate-pulse text-gray-500">Loading...</div>
         </div>
       );
     }
@@ -53,11 +53,11 @@ function App() {
         return (
           <div className="card p-8 text-center">
             <div className="max-w-md mx-auto">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-pastel-blue-50 flex items-center justify-center">
-                <UtensilsCrossed className="w-12 h-12 text-pastel-blue-500" />
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-primary-50 flex items-center justify-center">
+                <ChefHat className="w-12 h-12 text-primary-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Historial de Menús</h3>
-              <p className="text-gray-600">Esta función estará disponible próximamente. Podrás ver y gestionar tus menús anteriores.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Recipe History</h3>
+              <p className="text-gray-600">Coming soon! You'll be able to view and manage your previous menus here.</p>
             </div>
           </div>
         );
@@ -72,12 +72,12 @@ function App() {
         <div className="max-w-[1600px] mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="p-3 glass-effect rounded-2xl animate-pulse-slow bg-gradient-to-br from-pastel-pink-50 to-pastel-blue-50">
-                <UtensilsCrossed className="w-6 h-6 text-pastel-pink-500" />
+              <div className="p-3 glass-effect rounded-2xl animate-pulse-slow bg-gradient-to-br from-primary-50 to-secondary-50">
+                <ChefHat className="w-6 h-6 text-primary-500" />
               </div>
               <div>
-                <h1 className="text-2xl font-semibold text-gray-900">Planificador de Menú Semanal</h1>
-                <p className="text-sm text-gray-500 mt-1">Bienvenido/a, {user.username}</p>
+                <h1 className="text-2xl font-semibold text-gray-900">Weekly Menu Planner</h1>
+                <p className="text-sm text-gray-500 mt-1">Welcome, {user.username}</p>
               </div>
             </div>
             <button
@@ -85,7 +85,7 @@ function App() {
               className="btn btn-secondary flex items-center gap-2"
             >
               <LogOut className="w-4 h-4" />
-              Cerrar Sesión
+              Sign Out
             </button>
           </div>
         </div>
@@ -93,11 +93,11 @@ function App() {
 
       <main className="max-w-[1600px] mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {showSuccess && (
-          <div className="fixed bottom-4 right-4 bg-gradient-to-r from-pastel-pink-50 to-pastel-blue-50 text-gray-900 px-6 py-4 rounded-2xl shadow-lg flex items-center gap-3 animate-slide-up">
+          <div className="fixed bottom-4 right-4 bg-gradient-to-r from-primary-50 to-secondary-50 text-gray-900 px-6 py-4 rounded-2xl shadow-lg flex items-center gap-3 animate-slide-up">
             <div className="p-2 bg-white/50 rounded-xl">
-              <CheckCircle2 className="w-5 h-5 text-pastel-pink-500" />
+              <CheckCircle2 className="w-5 h-5 text-primary-500" />
             </div>
-            <span className="font-medium">¡Plan semanal generado con éxito!</span>
+            <span className="font-medium">Weekly plan generated successfully!</span>
           </div>
         )}
         

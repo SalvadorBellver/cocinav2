@@ -5,31 +5,23 @@ export default {
     extend: {
       colors: {
         background: 'rgb(var(--background) / <alpha-value>)',
-        neutral: {
-          50: 'rgb(var(--neutral-50) / <alpha-value>)',
-          100: 'rgb(var(--neutral-100) / <alpha-value>)',
-          200: 'rgb(var(--neutral-200) / <alpha-value>)',
-          500: 'rgb(var(--neutral-500) / <alpha-value>)',
-          600: 'rgb(var(--neutral-600) / <alpha-value>)',
-          700: 'rgb(var(--neutral-700) / <alpha-value>)',
+        primary: {
+          50: 'rgb(var(--primary-50) / <alpha-value>)',
+          100: 'rgb(var(--primary-100) / <alpha-value>)',
+          500: 'rgb(var(--primary-500) / <alpha-value>)',
+          600: 'rgb(var(--primary-600) / <alpha-value>)',
         },
-        'pastel-pink': {
-          50: 'rgb(var(--pastel-pink-50) / <alpha-value>)',
-          100: 'rgb(var(--pastel-pink-100) / <alpha-value>)',
-          500: 'rgb(var(--pastel-pink-500) / <alpha-value>)',
-          600: 'rgb(var(--pastel-pink-600) / <alpha-value>)',
+        secondary: {
+          50: 'rgb(var(--secondary-50) / <alpha-value>)',
+          100: 'rgb(var(--secondary-100) / <alpha-value>)',
+          500: 'rgb(var(--secondary-500) / <alpha-value>)',
+          600: 'rgb(var(--secondary-600) / <alpha-value>)',
         },
-        'pastel-blue': {
-          50: 'rgb(var(--pastel-blue-50) / <alpha-value>)',
-          100: 'rgb(var(--pastel-blue-100) / <alpha-value>)',
-          500: 'rgb(var(--pastel-blue-500) / <alpha-value>)',
-          600: 'rgb(var(--pastel-blue-600) / <alpha-value>)',
-        },
-        'pastel-yellow': {
-          50: 'rgb(var(--pastel-yellow-50) / <alpha-value>)',
-          100: 'rgb(var(--pastel-yellow-100) / <alpha-value>)',
-          500: 'rgb(var(--pastel-yellow-500) / <alpha-value>)',
-          600: 'rgb(var(--pastel-yellow-600) / <alpha-value>)',
+        accent: {
+          50: 'rgb(var(--accent-50) / <alpha-value>)',
+          100: 'rgb(var(--accent-100) / <alpha-value>)',
+          500: 'rgb(var(--accent-500) / <alpha-value>)',
+          600: 'rgb(var(--accent-600) / <alpha-value>)',
         },
         success: {
           50: '#ECFDF5',
